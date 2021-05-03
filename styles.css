@@ -19,6 +19,7 @@ body {
  margin: 50px 60px;
  border-radius: 20px;
  position: relative;
+ z-index:3;
 }
 
 #left-part{
@@ -31,18 +32,21 @@ body {
  bottom: 140px; left: -70px;
  background-color: none;
  position:absolute;
- z-index:5;
- opacity: 1;
+ z-index: 2;
 }
+
 .illustration-woman {
  display: flex;
  position: relative;
  bottom: 20px; left: -50px;
+ z-index: 1;
 }
 
 #right-part{
 display: flex;
 flex-direction: column;
 justify-content: center;
+width: 40%;
+text-align: center;
 }
 
