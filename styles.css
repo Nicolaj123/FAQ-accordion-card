@@ -2,7 +2,7 @@
  box-sizing: border-box;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 12px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body {
@@ -11,25 +11,38 @@ body {
  font-family: 'Kumbh Sans', sans-serif;
 }
 
+h4{
+ font-family: 'Kumbh Sans', sans-serif;
+ font-weight: 700;
+ color: hsl(240, 6%, 50%)
+}
+
+p{
+ font-family: 'Kumbh Sans', sans-serif;
+ font-weight: 400;
+}
+
 #main_faq {
  background-color: white ;
+ background-image: url("images/bg-pattern-desktop.svg");
+ background-repeat: no-repeat;
+ background-size: 45%;
  width: 90%;
  display: flex;
  align-items: center;
  margin: 50px 60px;
  border-radius: 20px;
  position: relative;
- z-index:3;
+ border: 1px solid blue;
 }
 
 #left-part{
  display: flex;
- margin-right: 80px;
 }
 
 .illustration-box{
  position: absolute;
- bottom: 140px; left: -70px;
+ bottom: 35%; right: 92%;
  background-color: none;
  position:absolute;
  z-index: 2;
@@ -37,15 +50,44 @@ body {
 
 .illustration-woman {
  display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
  position: relative;
- bottom: 20px; left: -50px;
- z-index: 1;
+ bottom: 30px; left: -80px;
 }
 
 #right-part{
 display: flex;
 flex-direction: column;
 justify-content: center;
-width: 40%;
+width: 60%;
+height: 20%;
+margin: 0px 100px;
 }
 
+.faq {
+ cursor: pointer;
+}
+
+.accordion {
+  background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border:none;
+  outline: none;
+  transition: 0.3s;
+}
+
+.active, .accordion:hover {
+  color:hsl(14, 88%, 65%)
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
