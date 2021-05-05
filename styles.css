@@ -43,31 +43,37 @@ hr{
 
 #left-part{
  display: flex;
+ border: 1px solid red;
 }
 
 .illustration-box{
+ display: block;
  position: absolute;
- bottom: 25%; right: 89%;
+ bottom: 22%;
+ right: 89%;
  background-color: none;
- position:absolute;
+ position: absolute;
  z-index: 2;
 }
 
 .illustration-woman {
- display: flex;
- flex-direction: row;
- flex-wrap: nowrap;
- position: relative;
- bottom: 30px; left: -40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  bottom: -30px; left: -30px;
+  width: 95%;
+  height: 85%;
 }
 
 #right-part{
 display: flex;
 flex-direction: column;
 justify-content: center;
-width: 100%;
+width: 50%;
 height: 20%;
 margin: 20px 20px;
+border: 1px solid red;
 
 }
 
@@ -105,4 +111,11 @@ margin: 20px 20px;
   background-color: white;
   display: none;
   overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  #main_faq{
+    display: flex;
+    flex-direction: column;
+  }
 }
