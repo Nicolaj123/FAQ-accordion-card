@@ -24,11 +24,16 @@ h1{
   font-weight: 700;
 }
 
+hr{
+  border: 0.5px solid hsl(240, 5%, 91%);
+  width: 100%;
+}
+
 #main_faq {
  background-color: white ;
  background-image: url("images/bg-pattern-desktop.svg");
  background-repeat: no-repeat;
- background-size: 35%;
+ background-size: 47%;
  display: flex;
  align-items: stretch;
  margin: 50px 190px;
@@ -85,15 +90,13 @@ margin: 20px 20px;
 
 .accordion:after {
   content: url("images/icon-arrow-down.svg");
-  font-size: 13px;
-  color: #777;
   float: right;
-  margin-left: 5px;
 }
 
 .active:after {
   content: url("images/icon-arrow-down.svg");
   transform: rotate(180deg);
+  -webkit-transform:rotate(180deg) ;
 }
 
 /* Style the accordion panel. Note: hidden by default */
