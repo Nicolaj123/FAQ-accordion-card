@@ -28,6 +28,7 @@ hr{
   border: 0.5px solid hsl(240, 5%, 91%);
   width: 100%;
 }
+@media screen and (min-width: 1150px) {
 
 #main_faq {
  background-color: white ;
@@ -35,6 +36,7 @@ hr{
  background-repeat: no-repeat;
  background-size: 47%;
  display: flex;
+ flex-direction: row;
  align-items: stretch;
  margin: 50px 190px;
  border-radius: 20px;
@@ -43,7 +45,6 @@ hr{
 
 #left-part{
  display: flex;
- border: 1px solid red;
 }
 
 .illustration-box{
@@ -73,7 +74,6 @@ justify-content: center;
 width: 50%;
 height: 20%;
 margin: 20px 20px;
-border: 1px solid red;
 
 }
 
@@ -87,7 +87,6 @@ border: 1px solid red;
   outline: none;
   transition: 0.3s;
   font-family: 'Kumbh Sans', sans-serif;
-
 }
 
 .active, .accordion:hover {
@@ -112,10 +111,75 @@ border: 1px solid red;
   display: none;
   overflow: hidden;
 }
-
+}
 @media screen and (max-width: 425px) {
+  p{
+   font-family: 'Kumbh Sans', sans-serif;
+   font-weight: 400;
+  }
+
+  h1{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-left: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+  }
+
   #main_faq{
     display: flex;
     flex-direction: column;
+    max-width: 90%;
+    max-height: 70%;
+    background-color: white ;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 47%;
+    border-radius: 20px;
+    margin: 40px 20px;
   }
+  .accordion {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border:none;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  .active, .accordion:hover {
+    color:hsl(14, 88%, 65%)
+  }
+
+  .accordion:after {
+    content: url("images/icon-arrow-down.svg");
+    float: right;
+  }
+
+  .active:after {
+    content: url("images/icon-arrow-down.svg");
+    transform: rotate(180deg);
+    -webkit-transform:rotate(180deg) ;
+  }
+  .illustration-woman {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 95%;
+    height: 85%;
+  }
+  .illustration-box{
+   display: block;
+   position: absolute;
+   bottom: 5px;
+   left: -5px;
+   background-color: none;
+   position: absolute;
+   z-index: 2;
+  }
+
 }
